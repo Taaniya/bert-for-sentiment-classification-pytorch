@@ -118,8 +118,8 @@ def main():
 
     # Load data
     drive_path = args.dataset_dir
-    df_train = pd.read_csv(drive_path+"train.csv").head(10)
-    df_val = pd.read_csv(drive_path+"validation.csv").head(10)
+    df_train = pd.read_csv(drive_path+"train.csv")
+    df_val = pd.read_csv(drive_path+"validation.csv")
     df_test = pd.read_csv(drive_path+"test.csv")
 
     model_dir = args.model_dir
