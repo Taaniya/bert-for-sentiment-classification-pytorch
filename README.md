@@ -1,7 +1,7 @@
-# BERT for sentiment classification
+# BERT for sentiment classification using pytorch
 This repository contains notebooks &amp; python scripts for fine tuning BERT for sentiment classification task
 
-# How to run
+## How to run
 ```
 python train.py --model_name "bert-base-multilingual-cased" 
 --seed 42 --batch_size 64 
@@ -9,7 +9,7 @@ python train.py --model_name "bert-base-multilingual-cased"
 --dataset_dir /path/to/load/dataset
 ```
 
-#### References
+### References
 1. https://www.curiousily.com/posts/sentiment-analysis-with-bert-and-hugging-face-using-pytorch-and-python/
 2. https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel
 3. https://mccormickml.com/2019/07/22/BERT-fine-tuning/
@@ -19,5 +19,5 @@ python train.py --model_name "bert-base-multilingual-cased"
 7. https://pytorch.org/blog/accelerating-training-on-nvidia-gpus-with-pytorch-automatic-mixed-precision/
 
 
-# Requirements
+#### Requirements
 python3
