@@ -1,9 +1,6 @@
 # BERT for sentiment classification
 This repository contains notebooks &amp; python scripts for fine tuning BERT for sentiment classification task
 
-# Requirements
-python3
-
 # How to run
 ```
 python train.py --model_name "bert-base-multilingual-cased" 
@@ -20,3 +17,7 @@ python train.py --model_name "bert-base-multilingual-cased"
 5. https://pytorch.org/docs/stable/notes/amp_examples.html
 6. https://developer.nvidia.com/blog/mixed-precision-training-deep-neural-networks/
 7. https://pytorch.org/blog/accelerating-training-on-nvidia-gpus-with-pytorch-automatic-mixed-precision/
+
+
+# Requirements
+python3
