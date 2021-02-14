@@ -14,7 +14,7 @@ import argparse
 import pandas as pd
 import numpy as np
 
-from transformers import BertModel, BertTokenizer, AdamW, get_linear_schedule_with_warmup, BertForSequenceClassification
+from transformers import BertTokenizer, AdamW, get_linear_schedule_with_warmup, BertForSequenceClassification
 from torch.utils.data import Dataset, DataLoader
 import torch
 from torch import nn
