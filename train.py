@@ -151,9 +151,7 @@ def main():
     scheduler = get_linear_schedule_with_warmup(optimizer=optimizer, 
                                                 num_warmup_steps=0,
                                                 num_training_steps=total_steps)
-
-    loss_fn = nn.CrossEntropyLoss().to(device)
-
+    
     # We'll store a number of quantities such as training and validation loss, 
     # validation accuracy, and timings.
     training_stats = []
