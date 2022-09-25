@@ -28,7 +28,7 @@ docker build -t bert-sentiment-classifier .
 docker run -d -p 5000:5000 bert-sentiment-classifier
 ```
 
-##### Test sentiment with curl from local machine
+##### Test sentiment detection service usingg curl from local machine
 
 ```
 curl --location --request POST 'http://localhost:5000/sentiment' \
