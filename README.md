@@ -1,7 +1,7 @@
 # BERT for sentiment classification using pytorch
 This repository contains notebooks &amp; python scripts for fine tuning BERT for sentiment classification task
 
-## How to run
+### Run model training
 ```
 python train.py --model_name "bert-base-multilingual-cased" 
 --seed 42 --batch_size 64 
@@ -19,5 +19,21 @@ python train.py --model_name "bert-base-multilingual-cased"
 7. https://pytorch.org/blog/accelerating-training-on-nvidia-gpus-with-pytorch-automatic-mixed-precision/
 
 
-#### Requirements
-python3
+#### Run sentiment detection service in docker container
+```
+# Build image
+docker build -t bert-sentiment-classifier . 
+
+# Run it in a container in detached mode
+docker run -d -p 5000:5000 bert-sentiment-classifier
+```
+
+##### Test sentiment with curl from local machine
+
+```
+curl --location --request POST 'http://localhost:5000/sentiment' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+    "text":"the user interface was quite easy to use"
+}'
+```
