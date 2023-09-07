@@ -18,7 +18,9 @@ from transformers import BertTokenizer, AdamW, get_linear_schedule_with_warmup, 
 from torch.utils.data import Dataset, DataLoader
 import torch
 from torch import nn
-from torch.cuda.amp import GradScaler, autocast
+from torch.cuda.amp import GradScaler, autocast        
+# GradScaler and autocast for aautomatic mixed precision training
+# https://pytorch.org/docs/stable/notes/amp_examples.html
 
 # Defining custom Dataset class by inheriting Dataset abstract class from torch and 
 # overriding __len__ & __getitem__ functions
